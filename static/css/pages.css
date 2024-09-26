@@ -1,0 +1,61 @@
+.section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-left: 6px solid red;
+
+}
+
+.section img {
+  border-radius: 8px;
+  margin-right: 20px;
+  max-width: 45%; /* Adjust the width of the image */
+  height: auto;
+}
+.login {
+	display:flex;
+	flex-direction:column;
+	background-color: #a7a7d7;
+	max-width: 300px;
+	padding: 20px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+}
+#id_password {
+    color: red; /* Change text color */
+    background-color: snow;
+    border: 2px solid lightblue; 
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px; 
+}
+#id_username {
+    color: black; /* Change text color */
+    background-color: snow; 
+    border: 2px solid lightblue; 
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px; /* Add some padding */
+}
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 5px;
+  margin-top:5px;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+  width: 100%; /* Full width for input */
+}
+
+.btn:hover {
+  background-color: #037f50;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
