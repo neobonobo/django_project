@@ -19,7 +19,6 @@
 	max-width: 400px;
 	background-color: lightgray;
 	border-radius: 10px;
-	padding: 20px;
 	margin-left: 20px;
 	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
@@ -28,6 +27,7 @@
 	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 	border-left: 2px solid red;
 	padding:2px;
+	margin:10px;
 }
 .daytrack h3, .events h3 {
     margin-bottom: 5px; /* Decrease space below the headers */
