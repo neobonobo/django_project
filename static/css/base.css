@@ -1,11 +1,6 @@
-body {
-    background-color: #ddd;
-	font-family: Verdana, sans-serif;
-}
 .container {
 	background-color: #f5f5f5;
-    max-width: 1000px;
-    margin: 20px auto;
+    max-width: 1200px;
     padding: 20px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
@@ -14,3 +9,14 @@ a {
 	text-decoration: none;
 	color: black;
 }
+}
+/* Base styles (for screens larger than 1440px) */
+body {
+    font-size: 1.2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+
