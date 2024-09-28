@@ -1,29 +1,72 @@
+body {
+    background-color: #ddd;
+	margin: 0; padding: 0;
+	font-family: Verdana, sans-serif;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+.container {
+    max-width: 95%;
+    margin:0px auto;
+	margin-top: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+	background-color: orange;
+}
+.sections {
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+    align-items: center;
+	margin : 0 auto;
+	width: 80%;
+	font-size:1rem;
+    padding: 10px;
+	background-color: snow;
+}
 .section {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
-  margin: 20px;
-  padding: 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: khaki;
+  width: 80%;
+  margin: 0px auto;
+  margin-bottom: 20px;
+  padding: 10px;
   border-left: 6px solid red;
-
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
 }
-
+.a {
+	width: 80%;
+	display:block;
+}
 .section img {
   border-radius: 8px;
   margin-right: 20px;
-  max-width: 45%; /* Adjust the width of the image */
   height: auto;
 }
-.login {
-	display:flex;
-	flex-direction:column;
-	background-color: #a7a7d7;
-	max-width: 300px;
-	padding: 20px;
-	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-	border-radius: 10px;
+.section {
+    position: relative;  /* Parent element positioned relatively */
+}
+.login-button {
+    position: absolute;   /* Positioning the login button relative to the .section */
+    top: 3px;            /* Adjust to move vertically from the top edge */
+    right: 3px;          /* Adjust to move horizontally from the right edge */
+}
+.btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
 }
 #id_password {
     color: red; /* Change text color */
@@ -58,9 +101,8 @@
   color: red;
   margin-top: 10px;
 }
-@media screen and (max-width: 500px) {
-	.section {
-		flex-direction:column;
-  justify-content: start;
-	}
+@media screen and (max-width: 800px) {
+.section {
+  flex-direction:column;
+}
 }
