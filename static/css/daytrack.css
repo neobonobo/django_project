@@ -19,18 +19,23 @@ body {
     max-width: 1100px;
 	font-size:1rem;
 	background-color: snow;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+	margin: 0 auto;
 }
 .dashboard a {
 	text-decoration: none;
 	color:black;
 }
 .daytrack {
-	background-color: lightgray;
+	background-color: MediumSeaGreen;
 	display:flex;
 	flex-direction: column;
 	border-radius:10px;
 	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 	padding:10px;
+	max-width:400px;
+	margin:10px;
 }
 .daytrack div{
 	padding:5px;
@@ -39,10 +44,11 @@ body {
 	display:flex;
 	flex-direction: column;
 	align-items: center;
-	background-color: lightgray;
+	background-color: DodgerBlue;
 	border-radius: 10px;
 	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 	padding:10px;
+	margin:10px;
 }
 .events div {
 	background-color: Khaki;
@@ -52,19 +58,31 @@ body {
 	margin-bottom:10px;
 }
 .rasa-container {
-      display: flex;
-	  flex-direction: column;
-	  align-items: start;
-      align-items: center;
-	background-color: lightgray;
+    display: grid;
+	grid-template-areas:'avatar input' 'bot-response bot-response';
+	gap: 10px;	
+	padding: 10px;
+	min-width:300px;
+	margin:10px;
+	border-radius:10px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+	background-color: Violet;
 }
 .avatar {
+	grid-area:avatar;
      margin-right: 20px;
 }
 .avatar img {
            width: 50px;
             height: 50px;
             border-radius: 50%;
+}
+.input-box {
+	grid-area:input;
+	height: 20px
+}
+.bot-response {
+	grid-area:bot-response;
 }
 .buttons {
 	display:flex;
@@ -75,6 +93,7 @@ body {
 	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 	padding:10px;
 	background-color: lightgray;
+	margin:10px;
 }
 .update_button {
   float:left;
@@ -103,9 +122,6 @@ body {
 		width:90%;
 		margin:auto;
 		margin-bottom:10px;
-	}
-	.daytrack div {
-		width:90%;
 	}
 	.events {
 		width:90%;
