@@ -17,16 +17,31 @@ a {
 	background-color: orange;
 }
 .events {
+	background-color: snow;
 	display:flex;
 	flex-direction:column;
 	justify-content:center;
     align-items: center;
 	margin: 0 auto;
 	width: 80%;
+	padding: 10px;
+	border-radius: 5px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 	font-size:1rem;
-    padding: 10px;
-	background-color: snow;
 }
+.event-details {
+	background-color: snow;
+	display:flex;
+	flex-direction:row;
+	justify-content:space-around;
+	align-items:center;
+	margin:0 auto;
+	width: 80%;
+	padding: 10px;
+	border-radius: 5px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
 .event-item {
 	display:flex;
 	flex-direction:row;
@@ -40,6 +55,9 @@ a {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 	border-radius: 5px;
 }
+.event-item img {
+	width : 25%;
+}
 .event-info {
 	margin-left:30px;
 	font-size:1.4rem;
@@ -47,31 +65,22 @@ a {
 
 .event-item img {
 	padding:10px;
-	max-width: 30%;
-	height: auto;
-}
-.event-details {
-	display:flex;
-	flex-direction:row;
-	justify-content:space-between;
-	align-items:start;
-	max-width: 80%;
-	margin:0 auto;
-	margin-top: 20px;
-	padding: 10px;
-	border-radius: 5px;
-	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-	background-color: snow;
 }
 .event-detail {
-	margin:0 auto;
+	width: 40%;
 	background-color: lightgray;
 	padding: 10px;
 	border-radius: 5px;
 	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+.event-join h2, h3 {
+	background-color:lightblue;
+	border-radius: 5px;
+	text-align:center;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
 .event-join {
-	margin:0 auto;
+	width: 40%;
 	background-color: lightgray;
 	padding: 10px;
 	border-radius: 5px;
