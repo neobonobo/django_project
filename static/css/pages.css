@@ -2,11 +2,14 @@ body {
     background-color: #ddd;
 	margin: 0; padding: 0;
 	font-family: Verdana, sans-serif;
+	color: white;
 }
+
 a {
 	text-decoration: none;
-	color: black;
+	color: white;
 }
+
 .container {
     max-width: 95%;
     margin:0px auto;
@@ -14,8 +17,9 @@ a {
     padding: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-	background-color: orange;
+	background-color: darkseagreen;
 }
+
 .sections {
 	display:flex;
 	flex-direction:column;
@@ -27,36 +31,47 @@ a {
     padding: 10px;
 	background-color: snow;
 }
+
+h2,strong {
+	color: darkslategray;
+}
+
 .section {
   display: flex;
   flex-direction: row;
+  justify-content: start;
   align-items: center;
-  background-color: khaki;
+  background-color: darkseagreen;
   width: 80%;
   margin: 0px auto;
   margin-bottom: 20px;
   padding: 10px;
-  border-left: 6px solid red;
+  border-left: 6px solid darkcyan;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
 }
+
 .a {
 	width: 80%;
 	display:block;
 }
+
 .section img {
   border-radius: 8px;
   margin-right: 20px;
-  height: auto;
+  height: 50px;
 }
+
 .section {
     position: relative;  /* Parent element positioned relatively */
 }
+
 .login-button {
     position: absolute;   /* Positioning the login button relative to the .section */
     top: 3px;            /* Adjust to move vertically from the top edge */
     right: 3px;          /* Adjust to move horizontally from the right edge */
 }
+
 .btn {
     padding: 10px 20px;
     background-color: #007bff;
