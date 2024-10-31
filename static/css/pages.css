@@ -117,7 +117,23 @@ h2,strong {
   margin-top: 10px;
 }
 @media screen and (max-width: 800px) {
+.container {
+	background-color: snow;
+	width: 100%;
+}
+.sections {
+  width:100%;
+}
 .section {
+  max-width:100%;
   flex-direction:column;
+  justify-content:start;
+  margin:2px;
+}
+.chat-input {
+	max-height: 50px;
+}
+.chat-output {
+	max-height: 50px;
 }
 }
